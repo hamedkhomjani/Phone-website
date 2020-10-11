@@ -11,3 +11,12 @@
     overflow: hidden;
     background: linear-gradient(to left, #ff910a, #a75106, #0d0d0d);
 }
+
+nav {
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
