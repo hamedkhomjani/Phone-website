@@ -51,7 +51,7 @@ nav {
     height: 1000px;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: -10%;
     transform: translateY(-50%);
 }
 
@@ -138,4 +138,16 @@ nav {
 #downBtn {
     width: 15px;
     cursor: pointer;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 500px solid black;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid black;
+    border-left: 500px solid black;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
