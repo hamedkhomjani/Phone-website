@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script href="script.js"></script>
     <title>Phone Website</title>
 </head>
 
@@ -65,6 +64,21 @@
             <img src="images/arrowDOWN.png" id="downBtn">
         </div>
     </div>
+
+    <script>
+        var circle = document.querySelector("circle");
+        var upBtn = document.querySelector("upBtn");
+        var downBtn = document.querySelector("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function() {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
 </body>
 
 </html>
